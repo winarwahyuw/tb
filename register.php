@@ -1,0 +1,45 @@
+<?php
+    include "konek.php";
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SIGN UP</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <header class="headerlog">
+        <div class="wrap">
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="index.php"><b>SIGN IN</b></a>
+                </li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    <div class="test"></div>
+    <div class="kotak">
+        <p class="tulisan"><b>SIGN UP</b></p>
+        
+        <form class="label" method="post" action="action_register.php" >
+            <label for="nama"><b>Nama</b></label>
+            <input type="text" placeholder="Enter Nama" name="nama" class="form_sign" required>
+        
+            <label for="username"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="username" class="form_sign" required>
+        
+            <label for="psw-repeat"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="pass" class="form_sign" required>
+            <hr>
+            <button type="submit" name="register" class="registerbtn">SIGN UP</button>
+        </form>
+    </div>
+</body>
+</html>
